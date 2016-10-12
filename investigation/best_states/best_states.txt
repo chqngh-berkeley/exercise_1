@@ -1,0 +1,19 @@
+What states are models of high-quality care?
+
+To find the states with the high-quality care, I applied the same technique
+that I used to find the best hospitals. I aggregated the Procedure_T by State
+and computed the average Score of TimelyAndEffectiveCare. The query then ranks
+the average score of procedures for each state and produce the top 10 results.
+I pruned out the Procedure Scores that are null or over 200 because I consider them outliers.
+
+State avgTimelyAndEffectiveCareScore
+NH	89.35113268608414
+DE	88.98689956331877
+MD	88.58530805687204
+VT	88.51567944250871
+NJ	87.85443037974683
+VI	87.85106382978724
+NE	87.76683417085427
+HI	87.48139534883721
+FL	87.42759880438392
+ME	87.40665873959571

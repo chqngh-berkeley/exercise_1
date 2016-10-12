@@ -1,0 +1,19 @@
+What hospitals are models of high-quality care?
+That is, which hospitals have the most consistently high scores for a variety of procedures.
+
+To find the hospitals with the high-quality care, I aggregated the Procedure_T by
+Hospitals and computed the average Score of TimelyAndEffectiveCare. The data then ranks
+the average across procedures for the hospitals and produce the top 10 results.
+I pruned out the Procedure Scores that are null or over 200 because I consider them outliers.
+
+ProviderID        Hospital Name           AverageTimelyAndEffectiveCareScore
+241302	SANFORD WESTBROOK MEDICAL CENTER	116.5
+241374	PIPESTONE COUNTY  MEDICAL CENTER	113.5
+451376	LAVACA MEDICAL CENTER	107.0
+331316	COMMUNITY MEMORIAL HOSPITAL, INC	104.875
+171345	PAWNEE  VALLEY COMMUNITY HOSPITAL	104.33333333333333
+451333	MARTIN COUNTY HOSPITAL DISTRICT	103.5
+171373	ALLEN COUNTY REGIONAL HOSPITAL	103.33333333333333
+261335	MERCY ST FRANCIS HOSPITAL	102.4
+490144	NOVANT HEALTH HAYMARKET MEDICAL CENTER	101.75
+141307	PINCKNEYVILLE COMMUNITY HOSPITAL	101.0

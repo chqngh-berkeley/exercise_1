@@ -32,3 +32,10 @@ hdfs dfs -put /data/hospital/surveys_responses.csv /user/w205/hospital_compare/s
 hdfs dfs -put /data/hospital/Measures.csv /user/w205/hospital_compare/Measures
 hdfs dfs -put /data/hospital/readmissions.csv /user/w205/hospital_compare/readmissions
 hdfs dfs -ls /user/w205/hospital_compare
+
+# This section puts the transform and query sql files into ec2
+# scp -i ../../UCBW205HW2.pem transforming/transform.sql root@ec2-54-196-75-125.compute-1.amazonaws.com:/data/hospital
+# scp -i ../../UCBW205HW2.pem investigation/best_hospitals/best_hospital.sql root@ec2-54-196-75-125.compute-1.amazonaws.com:/data/hospital;
+# scp -i ../../UCBW205HW2.pem investigation/best_states/best_states.sql root@ec2-54-196-75-125.compute-1.amazonaws.com:/data/hospital;
+# scp -i ../../UCBW205HW2.pem investigation/hospitals_and_patients/hospitals_and_patients.sql root@ec2-54-196-75-125.compute-1.amazonaws.com:/data/hospital
+# scp -i ../../UCBW205HW2.pem investigation/hospital_variability/hospital_variability.sql root@ec2-54-196-75-125.compute-1.amazonaws.com:/data/hospital

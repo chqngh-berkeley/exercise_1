@@ -1,0 +1,11 @@
+Are average scores for hospital quality or procedural variability correlated with patient survey responses?
+
+To find whether there is a correlation, I calculated the Pearson's R coefficient
+between HCAHPSBase score(from SurveyResults Table) and avg score for hospital quality(see best_hospital.sql)
+as well as the HCAHPSBase score against the procedural variability.
+
+The Pearson's coefficient between HCAHPSBase and avgTimelyAndEffectiveCareScore
+is -0.057182781344855084, indicating no correlation.
+
+The Pearson's coefficient between HCAHPSBase and standarad deviation of TimelyAndEffectiveCareScore
+0.2218446865124282, indicating a weak positive correlation.

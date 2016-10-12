@@ -100,13 +100,16 @@ CREATE EXTERNAL TABLE ReadmissionAndDeaths (
   ZipCode INT,
   CountyName STRING,
   PhoneNumber STRING,
-  MeasureName STRING,
-  MeasureID STRING,
+
+
   ComparedToNational STRING,
   Denominator FLOAT,
   Score FLOAT,
   LowerEstimate FLOAT,
   HigherEstimate FLOAT,
+
+  MeasureName STRING,
+  MeasureID STRING,
   Footnote STRING,
   MeasureStartDate DATE,
   MeasureEndDate DATE
@@ -132,11 +135,14 @@ CREATE EXTERNAL TABLE TimelyAndEffectiveCare (
   ZipCode INT,
   CountyName STRING,
   PhoneNumber STRING,
+
   Condition STRING,
-  MeasureID STRING,
-  MeasureName STRING,
   Score INT,
   Sample INT,
+
+  MeasureID STRING,
+  MeasureName STRING,
+
   Footnote STRING,
   MeasureStartDate DATE,
   MeasureEndDate DATE

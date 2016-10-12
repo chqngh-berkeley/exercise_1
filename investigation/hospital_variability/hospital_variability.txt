@@ -1,0 +1,19 @@
+Which procedures have the greatest variability between hospitals?
+
+To find the procedures with the greatest variability, I took the standard
+deviation of procedures's TimelyAndEffectiveCareScore. I did this by first
+grouping the Procedures by MeasureID, then I computed the standard deviation(stddev_pop in Hive)
+of the scores and ranked them in descending order. Then I took the top 10 results, the 10
+with the greatest standard deviation, therefore the greatest variance(variability).
+
+MeasureID     Measure Name          Standard Deviation
+STK_4	        Thrombolytic Therapy	21.95419456116401
+AMI_7a	      Fibrinolytic Therapy Received Within 30 Minutes Of Hospital Arrival	18.7794213613377
+VTE_1	        Venous thromboembolism prophylaxis	15.257401142298418
+HF_1	        Discharge instructions	11.827981182220089
+VTE_6	        Incidence of potentially preventable VTE	8.062464154313083
+PC_01	        Percent of newborns whose deliveries were scheduled early (1-3 weeks early), when a scheduled delivery was not medically necessary	6.9582579621247875
+AMI_8a      	Primary PCI Received Within 90 Minutes of Hospital Arrival	6.69453253926259
+SCIP_INF_9  	Postoperative Urinary Catheter Removal	4.859137724694657
+SCIP_VTE_2  	Surgery Patients Who Received Appropriate Venous Thromboembolism Prophylaxis Within 24 Hours Prior to Surgery to 24 Hours After Surgery	4.692348522505282
+STK_2	        Discharged on Antithrombotic Therapy	3.882239441173124
